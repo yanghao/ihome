@@ -14,4 +14,5 @@ if response.status == 200:
     ip = response.read()
     conn.request("GET", "/ipset/%s/%s/%s" % (place, ip, password))
     r = conn.getresponse()
-    print(r.read())
+    if r.status != 200:
+        print(r.read())
