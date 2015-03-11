@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import os
 import sys
 from httplib import HTTPConnection
